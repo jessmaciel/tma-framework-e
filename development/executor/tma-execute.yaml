@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: tma-execute
-        image: joseadp/tma-execute
+        image: tma-execute:0.1
