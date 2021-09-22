@@ -110,6 +110,7 @@ public class Main
     private static void act(Actuator actuator, Action action) {
         // Request the service from the actuator to perform the adaptation
         try {
+	LOGGER.info("OLA");
             RestServices.requestRestService(actuator, action);
         } catch (IOException e) {
             // TODO Auto-generated catch block

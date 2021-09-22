@@ -41,7 +41,7 @@ public class RestServices {
         byte[] payload = encryptMessage(actuator, jsonPayload, pubKey);
 
         // TODO: It still needs to add the action
-        URL url = new URL(actuator.getAddress() + "act");
+        URL url = new URL(actuator.getAddress() + "/act");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("POST");
         con.setRequestProperty("Content-Type", "application/json");
