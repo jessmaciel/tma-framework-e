@@ -18,7 +18,9 @@ public class RestServices {
     private static final Logger LOGGER = LoggerFactory.getLogger(RestServices.class);
 
     private static final String API_ENDPOINT = 
-            "http://192.168.122.34:8089/apis/extensions/v1beta1/namespaces/default/deployments/tma-analyze/scale";
+    "http://192.168.122.240:8001/apis/extensions/v1beta1/namespaces/default/deployments/tma-analyze/scale";
+    //"http://192.168.122.34:8089/apis/extensions/v1beta1/namespaces/default/deployments/tma-analyze/scale";
+    //http://jess-m.dei.uc.pt:8080/k8sActuator
     
     public static void requestPutRestService(List<Configuration> config) throws IOException {
         // FIXME It would be better to use PATCH instead of PUT.
